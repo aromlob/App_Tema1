@@ -65,7 +65,7 @@ class NewAlarm : AppCompatActivity() {
         //Minutos del sistema + 2 minutos
         val alarmMin = calendar.get(Calendar.MINUTE) + 2
 
-        //Sr configura la alarma con la hora y los minutos del sistema
+        //Se configura la alarma con la hora y los minutos del sistema
         val intent = Intent(AlarmClock.ACTION_SET_ALARM).apply {
             putExtra(AlarmClock.EXTRA_HOUR, alarmHour)
             putExtra(AlarmClock.EXTRA_MINUTES, alarmMin)
