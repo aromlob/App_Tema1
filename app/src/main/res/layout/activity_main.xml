@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="317dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/tx_option"
+        android:layout_width="164dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/opcion"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/iv_logo"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/iv_logo"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_phone"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="52dp"
+        android:background="@color/telefono"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_search"
+        app:layout_constraintEnd_toStartOf="@+id/ibtn_alarm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_option"
+        app:layout_constraintTop_toBottomOf="@+id/tx_option"
+        app:layout_constraintVertical_bias="0.947"
+        app:srcCompat="@android:drawable/stat_sys_speakerphone" />
+
+    <ImageButton
+        android:id="@+id/ibtn_alarm"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        android:background="@color/reloj"
+        android:src="@drawable/ic_alarm"
+        app:layout_constraintBottom_toTopOf="@+id/ibtn_map"
+        app:layout_constraintEnd_toEndOf="@+id/tx_option"
+        app:layout_constraintStart_toEndOf="@+id/ibtn_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tx_option"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageButton
+        android:id="@+id/ibtn_map"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/mapa"
+        android:src="@drawable/ic_map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_alarm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_alarm"/>
+
+    <ImageButton
+        android:id="@+id/ibtn_search"
+        android:layout_width="66dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/url"
+        android:src="@drawable/ic_internet"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ibtn_phone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ibtn_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

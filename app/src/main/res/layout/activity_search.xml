@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <TextView
+        android:id="@+id/tx_seleccion"
+        android:layout_width="212dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="156dp"
+        android:text="Selecciona una web"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/btn_mercadona"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <TextView
+        android:id="@+id/tx_zara"
+        android:layout_width="103dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="464dp"
+        android:text="Zara ->"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_zara"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_seleccion" />
+
+    <ImageButton
+        android:id="@+id/btn_zara"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:src="@drawable/shopping"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tx_seleccion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tx_mercadona"
+        android:layout_width="103dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="380dp"
+        android:text="Mercadona ->"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mercadona"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_seleccion"
+        app:layout_constraintTop_toBottomOf="@+id/tx_zara"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/btn_mercadona"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="360dp"
+        android:src="@drawable/shopping_cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tx_seleccion"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_zara"
+        app:layout_constraintVertical_bias="1.0"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/tx_diariojaen"
+        android:layout_width="103dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="304dp"
+        android:text="Diario Jaen ->"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_diariojaen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tx_seleccion"
+        app:layout_constraintTop_toBottomOf="@+id/tx_mercadona" />
+
+    <ImageButton
+        android:id="@+id/btn_diariojaen"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="268dp"
+        android:src="@drawable/newspaper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tx_seleccion"
+        app:layout_constraintTop_toBottomOf="@+id/btn_mercadona"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/iv_back"
+        android:layout_width="71dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="192dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_diariojaen"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/tx_diariojaen"
+        app:srcCompat="@drawable/logout"
+        app:tint="@color/black" />
+</androidx.constraintlayout.widget.ConstraintLayout>
