@@ -3,4 +3,6 @@
     <string name="opcion">Selecciona una opción</string>
     <string name="mapa">Abrir el mapa</string>
     <string name="alarma">Crear una alarma</string>
+    <string name="number">Número guardado: </string>
+    <string name="phone">Escribe un número de teléfono</string>
 </resources>

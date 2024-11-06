@@ -1,3 +1,4 @@
+//Puglins para la configuración del proyecto
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
@@ -7,18 +8,23 @@ android {
     namespace = "com.example.apptema1"
     compileSdk = 35
 
+    // Configuración de la aplicación
     defaultConfig {
         applicationId = "com.example.apptema1"
-        minSdk = 26
+        minSdk = 22
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    // Configuración de ViewBinding, permite acceder a las vistas en XML a través del código
     viewBinding {
         enable = true
     }
+
+    // Configuración de tipos de compilación
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -28,6 +34,8 @@ android {
             )
         }
     }
+
+    //Opciones de compatibilidad
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -37,6 +45,7 @@ android {
     }
 }
 
+//Dependencias necesarias para el funcionamiento de la app
 dependencies {
 
     implementation(libs.androidx.core.ktx)
@@ -49,9 +58,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.fragment.ktx)
-    /*implementation ("androidx.appcompat:appcompat:1.7.0")
-    implementation ("androidx.fragment:fragment:1.8.5")
-    implementation ("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
-    implementation ("androidx.constraintlayout:constraintlayout:2.2.0")*/
 
 }
